@@ -1,11 +1,16 @@
 def turn(board)
-  until va
+  
   puts "Please enter 1-9:"
   user_input = gets.strip
   index = input_to_index(user_input)
+  
   if valid_move?(board, index) == true 
     move(board, index, "X")
     display_board(board)
+  else 
+    until valid_move?(board,index) == true
+    
+    
   end
     
   
